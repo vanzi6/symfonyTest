@@ -1,0 +1,11 @@
+main_page:
+    path: /
+    controller: App\Controller\MainController::main
+
+products_page:
+    path: /products
+    controller: App\Controller\MainController::products
+
+contacts_page:
+    path: /contacts
+    controller: App\Controller\MainController::contacts

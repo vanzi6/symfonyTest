@@ -1,0 +1,21 @@
+{% extends layout %}
+{% block content %}
+
+{{ include('partials/side-nav.html.twig', {menuItems: menuItems}) }}
+{{ include('partials/top-nav.html.twig') }}
+<div class="wrap">
+    <div class="main">
+        <div class="grid">
+            {% for product in products %}
+                <div class="grid-content">
+                    <div class="container-img">
+                        <img class="float-left" src="{{ product['img'] }}" />
+                    </div>
+                    <p class="grid-conten-text">{{ product['text'] }}</p>
+                </div>
+            {% endfor %}
+        </table>
+        </div>
+    </div>
+</div>
+{% endblock %}
