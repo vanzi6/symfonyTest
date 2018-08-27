@@ -15,27 +15,25 @@ class MainController extends Controller
     }
 
     public function products () {
+        //mleveno na kamenu i prosejano na masinskom situ
+        //upakovano u papirnatu ambalažu od 1kg, 5kg ili 10kg 
         $arr = [
             [
                 'img' => 'https://stock.adobe.com/Download/Watermarked/27279605',
-                'text'=> 'test test test test test'
+                'text'=> 'Brašno od spelte <br/> cena: 80 din/kg'
             ],
             [
                 'img' => 'https://stock.adobe.com/Download/Watermarked/27279605',
-                'text'=> 'test test test test test'
+                'text'=> 'Brašno od heljde <br/> cena: 140 din/kg'
             ],
             [
                 'img' => 'https://stock.adobe.com/Download/Watermarked/27279605',
-                'text'=> 'test test test test test'
+                'text'=> 'Brašno od raži <br/> cena: 70 din/kg'
             ],
             [
                 'img' => 'https://stock.adobe.com/Download/Watermarked/27279605',
-                'text'=> 'test test test test test'
-            ],
-            [
-                'img' => 'https://stock.adobe.com/Download/Watermarked/27279605',
-                'text'=> 'test test test test test'
-            ],
+                'text'=> 'Brašno od belog kukuruza <br/> cena: 60 din-kg'
+            ]
         ];
         return $this->render('content/products.html.twig',
             [

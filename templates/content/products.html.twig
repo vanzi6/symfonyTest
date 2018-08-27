@@ -11,7 +11,7 @@
                     <div class="container-img">
                         <img class="float-left" src="{{ product['img'] }}" />
                     </div>
-                    <p class="grid-conten-text">{{ product['text'] }}</p>
+                    <p class="grid-conten-text">{{ product['text']|raw }}</p>
                 </div>
             {% endfor %}
         </table>
