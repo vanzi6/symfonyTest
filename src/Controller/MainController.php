@@ -63,7 +63,7 @@ class MainController extends Controller
             ],
             '/products' => [
                 'href' => '/products', 
-                'text' => 'Brasno'
+                'text' => 'Brašno'
             ],
             '/contacts' => [
                 'href' => '/contacts',
