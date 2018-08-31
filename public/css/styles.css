@@ -36,7 +36,7 @@ p {
 }
 .container {
     width: 100%;
-    height: 350px;
+    height: 45vmin;
     background-image: url("/images/main-img.JPG");
     background-size: cover;
     background-repeat: no-repeat;
@@ -106,8 +106,8 @@ p {
 .text {
     background: #fff;
     border-radius: 20px;
-    margin: 0px 15px 30px 15px;
-    padding: 0px 10px 15px 10px;
+    margin: 0px 2vmin 30px 2vmin;
+    padding: 0px 2vmin 15px 2vmin;
 }
 .info {
     font-size: 2vmin;
@@ -150,13 +150,13 @@ p {
     justify-self: center;
 }
 .share-btn {
-    padding: 10vmax 0px 5vmax 0px;
+    padding: 5vmax 0px 3vmax 0px;
 }
 .share-btn a {
     display: initial;
 }
 .share-btn img {
-    width: 2em;
+    width: 1em;
     height: 1em;
 }
 .share-btn a:hover {
@@ -212,12 +212,13 @@ p {
         width: 100%;
     }
     .logo-top-nav {
-        margin: 10px auto 30px auto;
+        margin: 4vmin 1vmin 2vmin auto;
     }
     .contact {
         position: relative;
         bottom: 0;
         left: 0;
+        top: 2vmin;
         font-size: 4vmin;
     }
     .info {
