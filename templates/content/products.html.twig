@@ -5,13 +5,19 @@
 {{ include('partials/top-nav.html.twig') }}
 <div class="wrap">
     <div class="main">
+        <div class="info-small">
+            <em>
+                * mleveno na kamenu i prosejano na mašinskom situ<br/>
+                * upakovano u papirnatu ambalažu od 1kg, 5kg ili 10kg
+            </em>
+        </div>
         <div class="grid">
             {% for product in products %}
                 <div class="grid-content">
                     <div class="container-img">
                         <img class="float-left" src="{{ product['img'] }}" />
                     </div>
-                    <p class="grid-conten-text">{{ product['text'] }}</p>
+                    <p class="grid-conten-text">{{ product['text']|raw }}</p>
                 </div>
             {% endfor %}
         </table>

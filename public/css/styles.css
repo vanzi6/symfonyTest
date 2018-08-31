@@ -24,11 +24,13 @@ p {
 .main {
     margin-left: 20%; /* Same as the width of the sidebar */
     padding: 0px;
+    height: 100%;
 }
 .main p {
     padding: 0px 10px;
 }
 .title {
+    padding-top: 10px;
     text-align: center;
 }
 .container {
@@ -104,16 +106,17 @@ p {
     background: #fff;
     border-radius: 20px;
     margin: 0px 50px 30px 50px;
-    padding: 0px 10px 15px 10px
+    padding: 0px 10px 15px 10px;
 }
 .info {
-    margin: 0px 0px 5px 0px;
     font-size: 30px;
 }
+.info-small {
+    font-size: 25px;
+    padding: 10px 15px 10px 15px;
+}
 .logo {
-    width: 50%;
-    height: 200px;
-    background: gray;
+    text-align: center;
     margin: 10px auto 30px auto;
 }
 .contact {
@@ -128,9 +131,9 @@ p {
 }
 .menu-icon {
     width: 100px;
-    height: 20px;
+    height: 15px;
     background-color: #f2f2f2;
-    margin: 10px 0;
+    margin: 15px 0;
     border-radius: 100px;
 }
 .menu {
@@ -145,7 +148,22 @@ p {
     align-self: center;
     justify-self: center;
 }
-@media only screen and (max-device-width: 1200px) {
+.share-btn {
+    padding: 10vmax 0px 5vmax 0px;
+}
+.share-btn a {
+    display: initial;
+}
+.share-btn img {
+    width: 2em;
+    height: 1em;
+}
+.share-btn a:hover {
+    color: auto;
+    background-color: initial;
+    border-radius: none ;
+}
+@media only screen and (max-width: 1200px) {
     .grid {
         grid-template-columns: 100%;
         text-align: center;
@@ -158,7 +176,7 @@ p {
         font-size: 100px;
     }
     .main {
-        margin: 10% 0px 0px 0px;
+        margin: auto 0px 0px 0px;
     }
     .float-left {
         float: none;
@@ -170,11 +188,12 @@ p {
         grid-row-gap: 35px;
     }
     .wrap {
+        margin-top: 11vmax;
         height: auto;
     }
     .top-nav {
         width: 100%; /* Full-height: remove this if you want "auto" height */
-        height: 10%; /* Set the width of the sidebar */
+        height: 11vmax; /* Set the width of the sidebar */
         position: fixed; /* Fixed Sidebar (stay in place on scroll) */
         z-index: 1; /* Stay on top */
         top: 0; /* Stay at the top */
@@ -192,9 +211,6 @@ p {
         width: 100%;
     }
     .logo-top-nav {
-        width: 100px;
-        height: 100px;
-        background: gray;
         margin: 10px auto 30px auto;
     }
     .contact {
@@ -206,12 +222,18 @@ p {
     .info {
         font-size: 48px;
     }
+    .info-small {
+        font-size: 48px;
+    }
     .logo {
         visibility: hidden;
     }
 }
 @media only screen and (max-device-width: 1200px) and (orientation:landscape) {
     .top-nav {
-        height: 30vh;
+        height: 18vmax;
+    }
+    .warp {
+        height: 18vmax;
     }
 }
