@@ -107,10 +107,13 @@ p {
     border-radius: 20px;
     margin: 0px 50px 30px 50px;
     padding: 0px 10px 15px 10px;
-    height: 54vh;
 }
 .info {
     font-size: 30px;
+}
+.info-small {
+    font-size: 25px;
+    padding: 10px 15px 10px 15px;
 }
 .logo {
     text-align: center;
@@ -217,6 +220,9 @@ p {
         font-size: 38px;
     }
     .info {
+        font-size: 48px;
+    }
+    .info-small {
         font-size: 48px;
     }
     .logo {
