@@ -2,13 +2,18 @@
 <html>
     <head>
         <meta charset="UTF-8">
+        <meta name="description" content="{% block description %}Gazdinstvo Lazarević{% endblock %}">
+        <meta name="keywords" content="{% block keywords %}Gazdinstvo Lazarević{% endblock %}">
+        <meta name="author" content="Gazdinstvo Lazarević">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>{% block title %}Gazdinstvo Lazarević{% endblock %}</title>
         <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Work+Sans">
-        <link rel="stylesheet" type="text/css" href="/css/styles.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script src="/js/scripts.js"></script>
-        <title>{% block title %}Welcome!{% endblock %}</title>
+        <link rel="stylesheet" type="text/css" href="{{ app.environment == 'dev' ? 'css/styles.css' :  asset('build/css/app.css') }}">
+        <link rel="icon" href="images/logo-2.png">
     </head>
     <body>
         {% block content %}{% endblock %}
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="{{ app.environment == 'dev' ? 'js/scripts.js' : asset('build/js/app.js') }}"></script>
     </body>
 </html>
