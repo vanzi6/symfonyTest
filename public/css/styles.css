@@ -132,7 +132,7 @@ p {
 }
 .menu-icon {
     width: 20vmin;
-    height: 7px;
+    height: 1.5vmin;
     background-color: #f2f2f2;
     margin: 8px 0;
     border-radius: 100px;
@@ -156,8 +156,8 @@ p {
     display: initial;
 }
 .share-btn img {
-    width: 1em;
-    height: 1em;
+    width: 1.5em;
+    height: 1.5em;
 }
 .share-btn a:hover {
     color: auto;
@@ -189,12 +189,12 @@ p {
         grid-row-gap: 35px;
     }
     .wrap {
-        margin-top: 11vmax;
+        margin-top: 13.5vmax;
         height: auto;
     }
     .top-nav {
         width: 100%; /* Full-height: remove this if you want "auto" height */
-        height: 13vmax; /* Set the width of the sidebar */
+        height: 13.5vmax; /* Set the width of the sidebar */
         position: fixed; /* Fixed Sidebar (stay in place on scroll) */
         z-index: 1; /* Stay on top */
         top: 0; /* Stay at the top */
@@ -233,12 +233,17 @@ p {
     .min-space{
         padding-top: 17vmin;
     }
+    .share-btn img {
+        width: 1em;
+        height: 1em;
+    }
 }
 @media only screen and (max-device-width: 1200px) and (orientation:landscape) {
     .top-nav {
         height: 18vmax;
     }
-    .warp {
+    .wrap {
+        margin-top: 18vmax;
         height: 18vmax;
     }
 }
