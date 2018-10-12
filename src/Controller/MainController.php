@@ -17,19 +17,19 @@ class MainController extends Controller
     public function products () {
         $arr = [
             [
-                'img' => 'https://stock.adobe.com/Download/Watermarked/27279605',
+                'img' => '/images/spelta_800_800.jpg',
                 'text'=> 'Brašno od spelte <br/> cena: 80 din/kg'
             ],
             [
-                'img' => 'https://stock.adobe.com/Download/Watermarked/27279605',
+                'img' => '/images/heljda_800_800.jpg',
                 'text'=> 'Brašno od heljde <br/> cena: 140 din/kg'
             ],
             [
-                'img' => 'https://stock.adobe.com/Download/Watermarked/27279605',
+                'img' => '/images/raz_800_800.jpg',
                 'text'=> 'Brašno od raži <br/> cena: 70 din/kg'
             ],
             [
-                'img' => 'https://stock.adobe.com/Download/Watermarked/27279605',
+                'img' => '/images/kuk_belo_800_800.jpg',
                 'text'=> 'Brašno od belog kukuruza <br/> cena: 60 din/kg'
             ]
         ];

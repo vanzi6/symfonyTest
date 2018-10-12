@@ -77,10 +77,6 @@ p {
     background-color: green;
     display: block;
 }
-.float-left {
-    float: left;
-    margin-right: 5px;
-}
 .grid {
     display: grid;
     grid-template-columns: auto auto auto;
@@ -92,6 +88,7 @@ p {
     border: 1px solid white;
     background-color: white;
     border-radius: 15px;
+    overflow: hidden;
 }
 .grid-conten-text {
     font-size: 2vmin;
@@ -178,9 +175,6 @@ p {
     }
     .main {
         margin: auto 0px 0px 0px;
-    }
-    .float-left {
-        float: none;
     }
     .grid-conten-text {
         font-size: 4vmin;
