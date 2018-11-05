@@ -2,6 +2,7 @@
 <html>
     <head>
         <meta charset="UTF-8">
+        <meta name="google-site-verification" content="lDxTOGHIhYyrKdyYwHmDza0EckWZ60Zu_No56c6Xv4Y" />
         <meta name="description" content="{% block description %}Gazdinstvo Lazarević{% endblock %}">
         <meta name="keywords" content="{% block keywords %}Gazdinstvo Lazarević{% endblock %}">
         <meta name="author" content="Gazdinstvo Lazarević">
@@ -10,6 +11,16 @@
         <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Work+Sans">
         <link rel="stylesheet" type="text/css" href="css/styles.css?v={{ cssVersion }}">
         <link rel="icon" href="images/logo-2.png">
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-128668145-1"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'UA-128668145-1');
+        </script>
     </head>
     <body>
         {% block content %}{% endblock %}
