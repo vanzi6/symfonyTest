@@ -1,6 +1,6 @@
 {% extends layout %}
 {% block description %}Naručivanje brašna. Cene brašna od heljde, spelte, raži, belog kukuruza.{% endblock %}
-{% block keywords %}naručiti brašno, brašno od heljde, brašno od spelte, brašno od raži, brašno od belog kukuruza{% endblock %}
+{% block keywords %}kupiti brašno, naručiti brašno, brašno od heljde, brašno od spelte, brašno od raži, brašno od belog kukuruza{% endblock %}
 {% block content %}
 {{ include('partials/side-nav.html.twig', {menuItems: menuItems}) }}
 {{ include('partials/top-nav.html.twig') }}
@@ -16,7 +16,7 @@
             {% for product in products %}
                 <div class="grid-content">
                     <div class="container-img">
-                        <img class="float-left" src="{{ product['img'] }}" />
+                        <img src="{{ product['img'] }}" />
                     </div>
                     <p class="grid-conten-text">{{ product['text']|raw }}</p>
                 </div>
